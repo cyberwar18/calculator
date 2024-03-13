@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+### Bug 1: Number Input Mismatch
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Description:**  
+When pressing a number button on the calculator interface, the displayed number on the screen does not correspond to the number pressed.
+**Expected Behavior:**  
+The number displayed on the screen should match the number button pressed.
 
-## Available Scripts
+**Actual Behavior:**  
+The displayed number does not match the number button pressed, leading to confusion and incorrect input.
 
-In the project directory, you can run:
 
-### `npm start`
+### Bug 2: Operator Display Mismatch
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Description:**  
+When pressing an operator button on the calculator interface, the operator displayed on the screen does not correspond to the operator pressed.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Expected Behavior:**  
+The operator displayed on the screen should match the operator button pressed.
 
-### `npm test`
+**Actual Behavior:**  
+The displayed operator does not match the operator button pressed, leading to confusion and incorrect interpretation of the operation.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Bug 3: Clear Button Displays Incorrect Value
 
-### `npm run build`
+**Description:**  
+When pressing the clear button (C) on the calculator interface, it displays an unexpected value on the screen instead of clearing the display.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Expected Behavior:**  
+Pressing the clear button should reset the screen value to an empty string or zero, clearing any previous input or calculation.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Actual Behavior:**  
+The clear button displays a value on the screen instead of clearing it, which may cause confusion for users.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Bug 4: Equal Button Not Functioning
 
-### `npm run eject`
+**Description:**  
+When pressing the equal to (=) button on the calculator interface, it does not perform the expected calculation or display the result.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Expected Behavior:**  
+Pressing the equal to button should evaluate the mathematical expression and display the result on the screen.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Actual Behavior:**  
+The equal to button does not perform the calculation or display the result as expected. Instead, it may produce an error or no action at all.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Bug 5: Incorrect Result Calculation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Description:**  
+The calculated result displayed on the calculator interface does not match the expected result based on the provided input.
 
-## Learn More
+**Expected Behavior:**  
+The calculated result should accurately reflect the mathematical expression provided, following standard arithmetic rules.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Actual Behavior:**  
+The calculated result displayed on the screen differs from the expected result based on the input. This discrepancy may lead to incorrect calculations and outcomes.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Bug 6: Heading Alignment Issue
 
-### Code Splitting
+**Description:**  
+The heading of the calculator interface is not centered as expected, causing a visual misalignment.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Expected Behavior:**  
+The heading "Calculator" should be centered horizontally on the screen, providing a visually balanced layout.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Actual Behavior:**  
+The heading "Calculator" is not centered horizontally, resulting in an uneven layout appearance.
