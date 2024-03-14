@@ -9,9 +9,9 @@ const Calculator = () => {
             buttonText = '*';
             setScreenValue(screenValue + buttonText);
         } else if (buttonText === 'C') {
-            setScreenValue('2');
+            setScreenValue('');
         } else if (buttonText === '=') {
-            const result = eval(screenValue) + 5; 
+            const result = eval(screenValue); 
             setScreenValue(result.toString());
         } else if (buttonText === 'Backspace') { 
             setScreenValue(screenValue.slice(0, -1));
@@ -38,25 +38,25 @@ const Calculator = () => {
                             <td><button onClick={() => handleButtonClick('7')}>7</button></td>
                             <td><button onClick={() => handleButtonClick('8')}>8</button></td>
                             <td><button onClick={() => handleButtonClick('9')}>9</button></td>
-                            <td><button onClick={() => handleButtonClick('+')}>X</button></td>
+                            <td><button onClick={() => handleButtonClick('X')}>X</button></td>
                         </tr>
                         <tr>
                             <td><button onClick={() => handleButtonClick('4')}>4</button></td>
-                            <td><button onClick={() => handleButtonClick('1')}>5</button></td>
+                            <td><button onClick={() => handleButtonClick('5')}>5</button></td>
                             <td><button onClick={() => handleButtonClick('6')}>6</button></td>
-                            <td><button onClick={() => handleButtonClick('X')}>-</button></td>
+                            <td><button onClick={() => handleButtonClick('-')}>-</button></td>
                         </tr>
                         <tr>
                             <td><button onClick={() => handleButtonClick('1')}>1</button></td>
                             <td><button onClick={() => handleButtonClick('2')}>2</button></td>
                             <td><button onClick={() => handleButtonClick('3')}>3</button></td>
-                            <td><button onClick={() => handleButtonClick('/')}>+</button></td>
+                            <td><button onClick={() => handleButtonClick('+')}>+</button></td>
                         </tr>
                         <tr>
                             <td><button onClick={() => handleButtonClick('0')}>0</button></td>
                             <td><button onClick={() => handleButtonClick('.')}>.</button></td>
-                            <td><button >=</button></td>
-                            <td><button onClick={() => handleButtonClick('-')}>/</button></td>
+                            <td><button onClick={() => handleButtonClick('=')}>=</button></td>
+                            <td><button onClick={() => handleButtonClick('/')}>/</button></td>
                         </tr>
                     </tbody>
                 </table>
